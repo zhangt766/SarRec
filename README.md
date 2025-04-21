@@ -5,7 +5,7 @@ SarRec implements a retrieval-augmented generation framework for sequential reco
 
 ## Installation
 ```bash
-git clone https://github.com/your-org/SarRec.git
+git clone https://github.com/zhangt766/SarRec.git
 cd SarRec
 pip install -r requirements.txt
 ```
