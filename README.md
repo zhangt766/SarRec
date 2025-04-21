@@ -3,7 +3,8 @@
 ## Overview
 SarRec implements a retrieval‑augmented generation framework for sequential recommendation with **end‑to‑end differentiable retrieval** and **post‑hoc risk calibration**. It jointly trains a retriever and a large language model (LLM) generator under a unified objective, then applies conformal risk‑controlling calibration to deliver set‑valued recommendations with formal statistical guarantees.
 
-## Installation
+**Installation**
+```bash
 git clone https://github.com/your-org/SarRec.git
 cd SarRec
 pip install -r requirements.txt
