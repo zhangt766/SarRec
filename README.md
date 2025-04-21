@@ -3,7 +3,28 @@
 **Statistically‑Guaranteed Augmented Retrieval for Sequential Recommendation**
 
 ## Overview
-SarRec jointly trains a differentiable retriever and an LLM generator (with LoRA + 8‑bit quant) under a unified loss, then applies post‑hoc calibration to deliver recommendation sets with formal risk guarantees.
+
+SarRec implements a retrieval‑augmented generation framework for sequential recommendation with **end‑to‑end differentiable retrieval** and **post‑hoc risk calibration**. It jointly trains a retriever and a large language model (LLM) generator under a unified objective, then applies conformal risk‑controlling calibration to deliver set‑valued recommendations with formal statistical guarantees.
+
+---
+
+## 🚀 Features
+
+- **Differentiable Threshold Retrieval**  
+  Soft, learnable retrieval threshold → smooth gradient flow between retriever and LLM.
+- **Joint Training Objective**  
+  Generator log‑likelihood + retrieval set‑size penalty → adaptive, user‑aware recall.
+- **Post‑Hoc Calibration**  
+  Conformal risk‑controlling on a held‑out calibration set → guarantees on prediction risk/coverage.
+- **LoRA + 8‑bit Quantization**  
+  Efficient fine‑tuning of LLMs (e.g. Llama‑3.1) with minimal GPU memory footprint.
+- **Modular Codebase**  
+  Clear separation: retrieval, generation, training, calibration, inference.
+
+---
+
+## 📁 Repository Structure
+
 
 ## Installation
 git clone https://github.com/your-org/SarRec.git
