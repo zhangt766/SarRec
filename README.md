@@ -17,7 +17,7 @@ preprocess files contains codes to process raw datand embeddings for model input
 
 # 📦 Data Resources for MovieLens Project
 
-All data files used in this project are hosted on Hugging Face and can be accessed at huggingface website，will release after accept
+All data files used in this project are hosted on Hugging Face，will release after accept
 
 ## 📁 Contents
 
@@ -39,10 +39,6 @@ All data files used in this project are hosted on Hugging Face and can be access
 
 You can directly download files via `wget`, `curl`, or using the 🤗 Datasets Hub interface:
 
-```bash
-wget https://huggingface.co/datasets/zhangt766/Movielens/resolve/main/<filename>
-
-```
 
 
 ## Usage
