@@ -12,10 +12,40 @@ pip install -r requirements.txt
 
 ## Data Preparation
 ```
-python scripts/preprocess_data.py \
-  --raw_dir data/raw/ \
-  --out_dir data/processed/
+preprocess files contains codes to process raw datand embeddings for model input
 ```
+
+# 📦 Data Resources for MovieLens Project
+
+All data files used in this project are hosted on Hugging Face and can be accessed at:
+
+🔗 **[https://huggingface.co/datasets/zhangt766/Movielens/tree/main](https://huggingface.co/datasets/zhangt766/Movielens/tree/main)**
+
+## 📁 Contents
+
+- **Raw Data**
+  - Preprocessed user-item interaction sessions
+  - Original MovieLens item metadata
+
+- **Item Embeddings**
+  - Text-based or metadata-derived item vectors
+
+- **User-Item Interaction Embeddings**
+  - Interaction-based co-occurrence embeddings
+  - LightGCN collaborative filtering embeddings
+
+- **Model Checkpoints**
+  - Trained weights and intermediate results for reproduction
+
+## 📥 Usage
+
+You can directly download files via `wget`, `curl`, or using the 🤗 Datasets Hub interface:
+
+```bash
+wget https://huggingface.co/datasets/zhangt766/Movielens/resolve/main/<filename>
+
+
+
 
 ## Usage
 ### Train retriever + generator
