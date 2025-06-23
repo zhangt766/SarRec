@@ -1,0 +1,22 @@
+python main.py \
+--mode test \
+--batch_size 8 \
+--accumulate_grad_batches 16 \
+--dataset movielens_data \
+--data_dir data/ref/movielens \
+--cans_num 20 \
+--prompt_path ./prompt/artist.txt \
+--rec_embed SASRec \
+--llm_tuning lora \
+--llm_path /workspace/llama/models_hf/Llama-2-7b-hf \
+--rec_model_path ./rec_model/movielens.pt \
+--ckpt_path ./checkpoints/movielens.ckpt \
+--output_dir ./output/movielens/ \
+--log_dir movielens_logs \
+--lr_warmup_start_lr 7e-6 \
+--lr 7e-4 \
+--lr_decay_min_lr 7e-6 \
+--max_epochs 5 \
+--user_emb_path data/ref/movielens/test_user_embedding.npy \
+--item_emb_path data/ref/movielens/item_embedding.npy \
+--tau_path ./checkpoints/trained_tau.pth
